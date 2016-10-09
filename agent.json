@@ -1,0 +1,8 @@
+{
+    "server": false,
+    "datacenter": "DConsul",
+    "data_dir": "/var/consul",
+    "ui_dir": "/ui"
+    "log_level": "INFO",
+    "enable_syslog": true,
+}
