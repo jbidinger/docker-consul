@@ -2,5 +2,6 @@
     "server": true,
     "datacenter": "DConsul",
     "data_dir": "/var/consul",
-    "log_level": "INFO"
+    "log_level": "INFO",
+    "encrypt": "hGLjOGIXXEKAhq0yGGS3Hg=="
 }
