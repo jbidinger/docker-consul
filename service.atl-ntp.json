@@ -1,0 +1,34 @@
+{
+"services": [ {
+    "name": "ntp",
+    "id":   "ntp64",
+    "tags": ["ntpd"],
+    "address": "10.255.0.64",
+    "port": 53,
+    "enableTagOverride": false,
+    "checks": [
+      {
+        "name": "NTP Date on 10.255.0.64",
+        "script": "/bin/ntpdate -d 10.255.0.64",
+        "interval": "600s",
+        "timeout": "15s"
+      }
+    ]
+  },
+  {
+    "name": "ntp",
+    "id":   "ntp65",
+    "tags": ["ntpd"],
+    "address": "10.255.0.65",
+    "port": 53,
+    "enableTagOverride": false,
+    "checks": [
+      {
+        "name": "NTP Date on 10.255.0.65",
+        "script": "/bin/ntpdate -d 0.centos.pool.ntp.org",
+        "interval": "600s",
+        "timeout": "15s"
+      }
+    ]
+  }]
+}

@@ -25,5 +25,6 @@ RUN mkdir /etc/consul.d
 ADD agent.json             /etc/consul.d/agent.json
 ADD cluster.json           /etc/consul.d/cluster.json
 ADD service.consul-ui.json /etc/consul.d/service.consul-ui.json
+#ADD service.atl-ntp.json   /etc/consul.d/service.atl-ntp.json
 
 ENTRYPOINT ["/bin/consul"]
